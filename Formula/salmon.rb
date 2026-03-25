@@ -10,8 +10,10 @@ class Salmon < Formula
   depends_on "fftw"
 
   def install
-    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    system "cmake", "--build", "build"
+    mkdir "build" do
+      system "cmake", "..", *std_cmake_args
+      system "cmake", "--build", "."
+    end
     bin.install "build/salmon"
   end
 

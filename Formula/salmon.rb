@@ -2,7 +2,7 @@ class Salmon < Formula
   desc "Offline terminal guitar tuner with real-time mic input"
   homepage "https://github.com/santh-cpu/salmon"
   url "https://github.com/santh-cpu/salmon/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "PASTE_YOUR_SHA256_HERE"
+  sha256 "849b120159216398451a5b9846ea625e01b1e222316ac0002586554618554bdf"
   license "MIT"
 
   depends_on "cmake" => :build
